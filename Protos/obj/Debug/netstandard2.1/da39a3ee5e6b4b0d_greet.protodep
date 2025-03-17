@@ -1,2 +1,0 @@
-obj\Debug\netstandard2.1/Greet.cs \
-obj\Debug\netstandard2.1/GreetGrpc.cs: greet.proto

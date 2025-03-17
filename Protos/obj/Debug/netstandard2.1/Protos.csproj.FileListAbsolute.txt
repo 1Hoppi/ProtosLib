@@ -1,9 +1,0 @@
-C:\Users\Hoppi\Documents\Projects\Protobuf\Messenger\Protos\obj\Debug\netstandard2.1\Protos.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Hoppi\Documents\Projects\Protobuf\Messenger\Protos\obj\Debug\netstandard2.1\Protos.AssemblyInfoInputs.cache
-C:\Users\Hoppi\Documents\Projects\Protobuf\Messenger\Protos\obj\Debug\netstandard2.1\Protos.AssemblyInfo.cs
-C:\Users\Hoppi\Documents\Projects\Protobuf\Messenger\Protos\obj\Debug\netstandard2.1\Protos.csproj.CoreCompileInputs.cache
-C:\Users\Hoppi\Documents\Projects\Protobuf\Messenger\Protos\bin\Debug\netstandard2.1\Protos.deps.json
-C:\Users\Hoppi\Documents\Projects\Protobuf\Messenger\Protos\bin\Debug\netstandard2.1\Protos.dll
-C:\Users\Hoppi\Documents\Projects\Protobuf\Messenger\Protos\bin\Debug\netstandard2.1\Protos.pdb
-C:\Users\Hoppi\Documents\Projects\Protobuf\Messenger\Protos\obj\Debug\netstandard2.1\Protos.dll
-C:\Users\Hoppi\Documents\Projects\Protobuf\Messenger\Protos\obj\Debug\netstandard2.1\Protos.pdb

@@ -10,3 +10,4 @@ C:\Users\Hoppi\Documents\Projects\C#\MESSENGER_FILE_ENV\Protos\Protos\obj\Releas
 C:\Users\Hoppi\Documents\Projects\C#\MESSENGER_FILE_ENV\Protos\Protos\obj\Release\net8.0\refint\Protos.dll
 C:\Users\Hoppi\Documents\Projects\C#\MESSENGER_FILE_ENV\Protos\Protos\obj\Release\net8.0\Protos.pdb
 C:\Users\Hoppi\Documents\Projects\C#\MESSENGER_FILE_ENV\Protos\Protos\obj\Release\net8.0\ref\Protos.dll
+C:\Users\Hoppi\Documents\Projects\C#\MESSENGER_FILE_ENV\Protos\Protos\obj\Release\net8.0\Protos.sourcelink.json

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Maxim Kholkin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8235650794cd1b0fab37e716a50a20d456f859b3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Protos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Protos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

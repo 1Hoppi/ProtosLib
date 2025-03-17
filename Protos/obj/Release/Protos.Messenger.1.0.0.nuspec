@@ -8,7 +8,7 @@
     <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
     <readme>README.md</readme>
     <description>Package Description</description>
-    <repository type="git" />
+    <repository type="git" commit="8235650794cd1b0fab37e716a50a20d456f859b3" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="Google.Protobuf" version="3.25.1" exclude="Build,Analyzers" />
@@ -18,7 +18,7 @@
   </metadata>
   <files>
     <file src="C:\Users\Hoppi\Documents\Projects\C#\MESSENGER_FILE_ENV\Protos\Protos\bin\Release\net8.0\Protos.dll" target="lib\net8.0\Protos.dll" />
-    <file src="C:\Users\Hoppi\Documents\Projects\C#\MESSENGER_FILE_ENV\Protos\Protos\licenses\LICENSE.txt" target="LICENSE.txt" />
-    <file src="C:\Users\Hoppi\Documents\Projects\C#\MESSENGER_FILE_ENV\Protos\Protos\docs\README.md" target="README.md" />
+    <file src="C:\Users\Hoppi\Documents\Projects\C#\MESSENGER_FILE_ENV\Protos\LICENSE.txt" target="LICENSE.txt" />
+    <file src="C:\Users\Hoppi\Documents\Projects\C#\MESSENGER_FILE_ENV\Protos\README.md" target="README.md" />
   </files>
 </package>
