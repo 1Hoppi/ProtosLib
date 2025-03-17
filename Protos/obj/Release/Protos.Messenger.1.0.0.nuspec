@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Protos.Messenger</id>
+    <version>1.0.0</version>
+    <authors>Maxim Kholkin</authors>
+    <license type="file">LICENSE.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <readme>README.md</readme>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Google.Protobuf" version="3.25.1" exclude="Build,Analyzers" />
+        <dependency id="Grpc.AspNetCore" version="2.62.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Hoppi\Documents\Projects\C#\MESSENGER_FILE_ENV\Protos\Protos\bin\Release\net8.0\Protos.dll" target="lib\net8.0\Protos.dll" />
+    <file src="C:\Users\Hoppi\Documents\Projects\C#\MESSENGER_FILE_ENV\Protos\Protos\licenses\LICENSE.txt" target="LICENSE.txt" />
+    <file src="C:\Users\Hoppi\Documents\Projects\C#\MESSENGER_FILE_ENV\Protos\Protos\docs\README.md" target="README.md" />
+  </files>
+</package>

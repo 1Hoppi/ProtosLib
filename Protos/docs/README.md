@@ -1,0 +1,1 @@
+Protobuf files library that is used for gRPC communication in the messenger.

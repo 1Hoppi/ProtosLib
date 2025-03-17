@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Protos.Messenger</id>
+    <version>1.2.3</version>
+    <authors>Max Kholkin</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Google.Protobuf" version="3.25.1" exclude="Build,Analyzers" />
+        <dependency id="Grpc.AspNetCore" version="2.62.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Hoppi\Documents\Projects\C#\MESSENGER_FILE_ENV\Protos\Protos\bin\Release\net8.0\Protos.dll" target="lib\net8.0\Protos.dll" />
+  </files>
+</package>
