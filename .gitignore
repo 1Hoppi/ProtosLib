@@ -1,3 +1,6 @@
 .vscode
-Protos/bin
-Protos/obj
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
