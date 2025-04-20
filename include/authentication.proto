@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+import "google/api/annotations.proto";
+
+package authenticator;
+
+service Authentication {
+  rpc Login (LoginData) returns (TokenSet) {
+    option (google.api.http) = {
+      post: "/v1/authentication/login",
+      body: "*"
+    };
+  }
+
+  rpc RefreshToken (RefreshTokenData) returns (TokenSet) {
+    option (google.api.http) = {
+      post: "/v1/authentication/refresh-token",
+      body: "*"
+    };
+  }
+}
+
+service KeyAccessPoint {
+  rpc GetPublicKey (google.protobuf.Empty) returns (PublicKeyReply);
+}
+
+message LoginData {
+  string username = 1;
+  string password = 2;
+}
+
+message RefreshTokenData {
+  string refresh_token = 1;
+}
+
+message TokenSet {
+  string access_token = 1;
+  string refresh_token = 2;
+}
+
+message PublicKeyReply {
+  string key = 1;
+}

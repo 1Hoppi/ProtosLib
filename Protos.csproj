@@ -6,22 +6,17 @@
   <ItemGroup>
     <PackageReference Include="Google.Protobuf" Version="3.25.1" />
     <PackageReference Include="Grpc.AspNetCore" Version="2.62.0" />
-    <PackageReference Include="Grpc.Tools" Version="2.62.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
+    <PackageReference Include="Grpc.Tools" Version="2.62.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Protobuf Include="**/*.proto" GrpcServices="Both" />
-    <None Include="../LICENSE.txt" Pack="true" PackagePath=""/>
-    <None Include="../README.md" Pack="true" PackagePath=""/>
-    <None Include="google/**" Pack="true" PackagePath=""/>
+    <None Include="include/**" Pack="true" PackagePath=""/>
+    <None Include="google/**" Pack="true" PackagePath="google/"/>
   </ItemGroup>
 
   <PropertyGroup>
     <PackageId>1Hoppi.Protos.Messenger</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.3</Version>
     <Authors>Maxim Kholkin</Authors>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>

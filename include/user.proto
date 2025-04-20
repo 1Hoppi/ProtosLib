@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+import "google/api/annotations.proto";
+
+option csharp_namespace = "GrpcGreeter";
+
+package greet;
+
+service User {
+  rpc GetProfile (GetProfileRequest) returns (ProfileData) {
+    option (google.api.http) = {
+      post: "/v1/greeter",
+      body: "*"
+    };
+  }
+}
+
+message GetProfileRequest {
+  string name = 1;
+}
+
+message ProfileData {
+  string message = 1;
+}
