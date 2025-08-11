@@ -5,40 +5,53 @@ import "google/api/annotations.proto";
 
 package authenticator;
 
-service Authentication {
-  rpc Login (LoginData) returns (TokenSet) {
+service AuthenticationService {
+  rpc Register (LoginCredentials) returns (TokenSet) {
     option (google.api.http) = {
-      post: "/v1/authentication/login",
+      post: "/api/v1/auth/register",
       body: "*"
     };
   }
 
-  rpc RefreshToken (RefreshTokenData) returns (TokenSet) {
+  rpc Login (LoginCredentials) returns (TokenSet) {
     option (google.api.http) = {
-      post: "/v1/authentication/refresh-token",
+      post: "/api/v1/auth/login",
+      body: "*"
+    };
+  }
+
+  rpc Refresh (TokenSet) returns (TokenSet) {
+    option (google.api.http) = {
+      post: "/api/v1/auth/refresh",
+      body: "*"
+    };
+  }
+
+  rpc Logout (TokenSet) returns (google.protobuf.Empty) {
+    option (google.api.http) = {
+      post: "/api/v1/auth/logout",
+      body: "*"
+    };
+  }
+
+  rpc LogoutAll (AccessToken) returns (google.protobuf.Empty) {
+    option (google.api.http) = {
+      post: "/api/v1/auth/logout-all",
       body: "*"
     };
   }
 }
 
-service KeyAccessPoint {
-  rpc GetPublicKey (google.protobuf.Empty) returns (PublicKeyReply);
-}
-
-message LoginData {
+message LoginCredentials {
   string username = 1;
   string password = 2;
 }
 
-message RefreshTokenData {
-  string refresh_token = 1;
+message AccessToken {
+  string access_token = 1;
 }
 
 message TokenSet {
   string access_token = 1;
   string refresh_token = 2;
-}
-
-message PublicKeyReply {
-  string key = 1;
 }
