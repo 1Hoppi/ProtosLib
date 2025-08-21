@@ -6,52 +6,92 @@ import "google/api/annotations.proto";
 package authenticator;
 
 service AuthenticationService {
-  rpc Register (LoginCredentials) returns (TokenSet) {
+  rpc Register (RegisterRequest) returns (RegisterResponse) {
     option (google.api.http) = {
       post: "/api/v1/auth/register",
       body: "*"
     };
   }
 
-  rpc Login (LoginCredentials) returns (TokenSet) {
+  rpc Login (LoginRequest) returns (LoginResponse) {
     option (google.api.http) = {
       post: "/api/v1/auth/login",
       body: "*"
     };
   }
 
-  rpc Refresh (TokenSet) returns (TokenSet) {
+  rpc Refresh (RefreshRequest) returns (RefreshResponse) {
     option (google.api.http) = {
       post: "/api/v1/auth/refresh",
       body: "*"
     };
   }
 
-  rpc Logout (TokenSet) returns (google.protobuf.Empty) {
+  rpc Logout (LogoutRequest) returns (google.protobuf.Empty) {
     option (google.api.http) = {
       post: "/api/v1/auth/logout",
       body: "*"
     };
   }
 
-  rpc LogoutAll (AccessToken) returns (google.protobuf.Empty) {
+  rpc LogoutAll (LogoutAllRequest) returns (google.protobuf.Empty) {
     option (google.api.http) = {
       post: "/api/v1/auth/logout-all",
       body: "*"
     };
   }
+
+  rpc Validate (ValidateRequest) returns (ValidateResponse) {
+    option (google.api.http) = {
+      post: "/api/v1/auth/validate",
+      body: "*"
+    };
+  }
 }
 
-message LoginCredentials {
+message RegisterRequest {
   string username = 1;
   string password = 2;
 }
 
-message AccessToken {
+message RegisterResponse {
+  string access_token = 1;
+  string refresh_token = 2;
+}
+
+message LoginRequest {
+  string username = 1;
+  string password = 2;
+}
+
+message LoginResponse {
+  string access_token = 1;
+  string refresh_token = 2;
+}
+
+message RefreshRequest {
+  string access_token = 1;
+  string refresh_token = 2;
+}
+
+message RefreshResponse {
+  string access_token = 1;
+  string refresh_token = 2;
+}
+
+message LogoutRequest {
+  string access_token = 1;
+  string refresh_token = 2;
+}
+
+message LogoutAllRequest {
   string access_token = 1;
 }
 
-message TokenSet {
+message ValidateRequest = {
   string access_token = 1;
-  string refresh_token = 2;
+}
+
+message ValidateResponse = {
+  bool isValid = 1;
 }
